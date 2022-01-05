@@ -1,0 +1,145 @@
+.topPart{
+    height: 100px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rightPart{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+}
+
+.logotipo{
+    width: 100px;
+    height: 100%;
+}
+
+.icono{
+    width: 30px;
+    color: var(--primary);
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.topMenu{
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    height: 70px;
+    background-color: var(--primary);
+    border-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.searcher{
+    background-color: var(--secondary);
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 30px;
+    border-bottom-left-radius: 0px;
+}
+
+.categorySearcher{
+    padding-left: 15px;
+    background-color: var(--primary);
+    border-top-left-radius: 30px;
+}
+
+.category{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+    color: var(--quaternary);
+}
+
+.selected{
+    background-color: var(--tertiary);
+    color: var(--secondary);
+}
+
+.category:hover{
+    background-color: var(--tertiary);
+    color: var(--secondary);
+}
+
+.gridSearcher{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
+}
+
+.selectorSearcher{
+    height: 200%;
+    width: 90%;
+    background-color: var(--tertiary);
+    color: var(--secondary);
+    font-size: 1.2em;
+    font-weight: bold;
+    border:0;
+    border-radius: 15px;
+}
+
+.btnSearcher{
+    height: 200%;
+    width: 90%;
+    display: block;
+    margin: auto;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: var(--primary);
+    border-radius: 15px;
+}
+
+.btnSearcher:hover{
+    background-color: var(--quaternary);
+    color: var(--primary);
+}
+
+.labelSearcher{
+    color: var(--tertiary);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.contentHouses{
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    height: 100%;
+}
+
+@media screen and (max-width: 600px){
+    .searcher{
+        width: 100%;
+    }
+
+    .selectorSearcher{
+        width: 90%;
+    }
+    .btnSearcher{
+        width: 90%;
+    }
+}
