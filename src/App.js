@@ -13,12 +13,13 @@ function App() {
         console.log(doc.data());
       });
     });
-    
+
   }, []);
 
 
-    return (
-      <>
+  return (
+    <>
+      <header className="header">
         <div className="topPart">
           <img src={Logo} alt="logotipo" className="logotipo" />
           <div className="rightPart">
@@ -57,13 +58,20 @@ function App() {
             </div>
           </form>
         </div>
+      </header>
 
-        <div className="contentHouses">
-          <PropiedadItem />
-        </div>
-      </>
-    );
-  }
+      <div className="contentHouses">
+        <PropiedadItem />
+        <PropiedadItem />
+        <PropiedadItem />
+        <PropiedadItem />
+        <PropiedadItem />
+        <PropiedadItem />
+        <PropiedadItem />
+      </div>
+    </>
+  );
+}
 
 
 export default App;

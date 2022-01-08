@@ -7,6 +7,11 @@
     margin-top: 10px;
 }
 
+.header{
+    background-color: white;
+    margin: 0;
+}
+
 .rightPart{
     height: 100%;
     width: 100%;
@@ -124,11 +129,17 @@ a{
 }
 
 .contentHouses{
-    display: block;
+    border-width: 15px;
+    border-color: aqua;
+    display: grid;
     width: 80%;
     margin: auto;
     margin-top: 20px;
     height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
 @media screen and (max-width: 600px){
