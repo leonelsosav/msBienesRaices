@@ -1,14 +1,21 @@
+.initialBackground{
+    background-image: url("../../assets/stock3.jpeg");
+    top: 0;
+    position:relative;
+    background-position: center;
+    height: 100vh;
+}
+
 .topPart{
     height: 100px;
     display: flex;
     width: 80%;
     margin: auto;
     align-items: center;
-    margin-top: 10px;
+    padding: 20px;
 }
 
 .header{
-    background-color: white;
     margin: 0;
 }
 
@@ -27,16 +34,17 @@
 
 .icono{
     width: 30px;
-    color: var(--primary);
+    color: white;
     margin-right: 10px;
     margin-left: 20px;
 }
 
 a{
     text-decoration: none;
-    color: var(--primary);
+    color: white;
     font-size: 1.5em;
     font-weight: bold;
+    text-shadow: -1px 0 var(--primary), 0 1px var(--primary), 1px 0 var(--primary), 0 -1px var(--primary);
 }
 
 .topMenu{
@@ -52,18 +60,20 @@ a{
 }
 
 .searcher{
-    background-color: var(--secondary);
+    background-color: transparent;
     width: 80%;
     display: block;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 25vh;
     border-radius: 30px;
+    border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
+    border: 5px solid var(--secondary);
 }
 
 .categorySearcher{
     padding-left: 15px;
-    background-color: var(--primary);
+    background-color: transparent;
     border-top-left-radius: 30px;
 }
 
@@ -72,11 +82,12 @@ a{
     padding: 10px;
     border-radius: 10px;
     font-size: large;
-    color: var(--quaternary);
+    color: var(--secondary);
+    background-color: var(--tertiary_medio);
 }
 
 .selected{
-    background-color: var(--tertiary);
+    background-color: var(--tertiary) ;
     color: var(--secondary);
 }
 
@@ -123,9 +134,11 @@ a{
 }
 
 .labelSearcher{
-    color: var(--tertiary);
+    color: var(--secondary);
     font-weight: bold;
     font-size: 1.2em;
+    width: 100%;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 .contentHouses{
@@ -143,14 +156,29 @@ a{
 }
 
 @media screen and (max-width: 600px){
-    .searcher{
-        width: 100%;
+    a{
+        font-size: 1em;
+        display: block;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
 
-    .selectorSearcher{
-        width: 90%;
+    .topPart{
+        display: block;
     }
-    .btnSearcher{
-        width: 90%;
+
+    .logotipo{
+        display: block;
+        margin: auto;
+    }
+
+    .rightPart{
+        height: 100%;
+        width: 100%;
+        display: block;
+        align-items: center;
+    }
+
+    .contentHouses{
+        grid-template-columns: 1fr 1fr;
     }
 }
