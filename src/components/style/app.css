@@ -1,5 +1,5 @@
 .initialBackground{
-    background-image: url("../../assets/stock3.jpeg");
+    background-image: url("../../assets/stock1.jpeg");
     top: 0;
     position:relative;
     background-position: center;
@@ -143,7 +143,6 @@ a{
 
 .contentHouses{
     border-width: 15px;
-    border-color: aqua;
     display: grid;
     width: 80%;
     margin: auto;
@@ -153,6 +152,17 @@ a{
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 20px;
+}
+
+.destacadas{
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: var(--primary);
+    font-weight: bold;
 }
 
 @media screen and (max-width: 600px){
@@ -179,6 +189,6 @@ a{
     }
 
     .contentHouses{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }

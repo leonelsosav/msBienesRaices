@@ -20,7 +20,6 @@ function App() {
     const interval = setInterval(() => {
       document.getElementsByClassName("initialBackground")[0].style.backgroundImage = `url(${stock.current===1?stock2:stock.current===2?stock3:stock1})`;
       stock.current===1?stock.current=2:stock.current===2?stock.current=3:stock.current=1;
-      console.log(stock);
     }, 2000);
   
     return () => clearInterval(interval);
@@ -70,6 +69,7 @@ function App() {
 
       </div>
 
+      <p className="destacadas">Propiedades destacadas</p>
       <div className="contentHouses">
         <PropiedadItem />
         <PropiedadItem />
