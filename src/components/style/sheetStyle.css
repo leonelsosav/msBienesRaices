@@ -1,17 +1,105 @@
-.sheet{
-    width: 1240px;
-    display: block;
-    margin: auto;
+.sheet {
+  width: 1240px;
+  display: block;
+  margin: auto;
 }
 
-.portada-ficha{
-    display: block;
-    margin: auto;
-    width: 90%;
+.sheet-workspace {
+  display: block;
+  margin: auto;
+  width: 90%;
 }
 
-@page { size: auto;  margin: 0mm; }
+.portada-ficha {
+  width: 100%;
+}
+
+.portada-banner {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 70%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 50px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.titulo-ficha {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: var(--blue-hard);
+}
+
+.features-banner {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 0;
+  color: var(--blue-hard);
+  font-weight: bold;
+}
+
+.icon-ficha {
+  color: var(--blue-hard);
+  font-size: 2em;
+  display: block;
+  margin: 0 auto;
+}
+
+.feature-ficha {
+  margin: 0;
+  padding: 5px;
+}
+
+.green {
+  color: var(--green-hard);
+  font-size: 2em;
+}
+
+.feature-ficha {
+  text-align: center;
+}
+
+.info-container-ficha{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+}
+
+.precio-ficha, .descripcion-ficha, .caracteristicas-ficha{
+    padding: 0;
+    color: var(--blue-hard);
+    font-size: 1.2em;
+}
+
+.photos-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.imagen-ficha{
+    width: 100%;
+    border-radius: 20px;
+}
+
+@page {
+  size: auto;
+  margin: 0mm;
+}
 
 @media print {
-    .pagebreak { page-break-before: always; } 
+  .pagebreak {
+    page-break-before: always;
+  }
+  div {
+    break-inside: avoid;
+  }
 }
