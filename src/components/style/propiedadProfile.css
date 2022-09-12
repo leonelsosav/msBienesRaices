@@ -1,0 +1,13 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.title-profile,
+.subtitle-profile {
+  color: var(--blue-hard);
+  margin-left: 20px;
+}
+
+.propiedad-photos-container {
+  width: 60%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}

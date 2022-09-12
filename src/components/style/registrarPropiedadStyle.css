@@ -1,0 +1,40 @@
+.form-registrar{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.label-registrar{
+    color: var(--blue-hard);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.input-registrar{
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.btn-registrar{
+    width: 200px;
+    display: block;
+    margin: 10px auto;
+    font-size: 1.2em;
+    background-color: var(--blue-hard);
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-regresar{
+    width: 200px;
+    display: block;
+    margin: 10px 20px;
+    font-size: 1.2em;
+    background-color: var(--blue-hard);
+    color: white;
+    border-radius: 10px;
+}

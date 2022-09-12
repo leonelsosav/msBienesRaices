@@ -1,71 +1,67 @@
-.ItemContainer{
-    background-color: #FFFFFF;
-    border-radius: 10px;
+.item-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid var(--purple-unique);
 }
 
-.ItemContainer:hover{
-    transform: scale(1.05);
+.item-container:hover {
+  transform: scale(1.05);
 }
 
-.Letrero{
-    background-color: var(--primary);
-    position: absolute;
-    font-size: 1.5em;
-    padding: 20px;
-    color: white;
-    border-top-left-radius: 10px;
+.status {
+  position: absolute;
+  padding: 20px;
+  color: white;
+  border-top-left-radius: 10px;
 }
 
-.Foto{
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.photos {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.Texto{
-    padding: 10px;
+.text-container {
+  padding: 10px;
 }
 
-.Titulo{
-    text-align: center;
-    display: block;
-    margin: auto;
-    font-size: 2em;
-    font-weight: bold;
-    color: #000000;
+.title {
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-weight: bold;
+  color: var(--blue-hard);
+  text-shadow: none;
 }
 
-.Precio{
-    font-weight: bold;
-    color: var(--primary);
+.price {
+  font-weight: bold;
+  text-shadow: none;
+  color: var(--green-soft);
+  margin-bottom: 0;
 }
 
-.DivCaracteristicas{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 5px;
+.features-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
 }
 
-.Subtitulo{
-    padding-top: 20px;
-    border-bottom: 1px solid rgb(0,0,0,0.5);
-    padding-bottom: 5px;
-
+.icon {
+  color: var(--blue-hard);
+  display: block;
+  margin: auto;
+  font-size: 1.2em;
 }
 
-.CaracteristicasNumericas{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 5px;
-    padding:0;
+.feature {
+  padding: 0;
+  color: var(--blue-gray);
+  font-size: 0.7em;
+  text-shadow: none;
+  text-align: center;
 }
 
-.Caracteristica{
-    text-align: center;
-    display: block;
-    margin: auto;
-    padding: 0;
-    color: var(--primary);
-    font-weight: bold;
+.right-bar {
+  border-right: 1px solid var(--blue-hard);
 }
