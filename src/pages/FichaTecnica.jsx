@@ -13,7 +13,6 @@ const FichaTecnica = () => {
   useEffect(() => {
     const retrieveStock = async () => {
       const response = await getById("propiedad", propiedadId);
-      console.log(response);
       setPropiedad(response);
     };
     retrieveStock();
@@ -26,7 +25,7 @@ const FichaTecnica = () => {
           <div className="sheet-workspace">
             <div className="portada-container">
               <img
-                src={propiedad.Imagenes[0]}
+                src={propiedad.Imagenes[2]}
                 className="portada-ficha"
                 alt="imagen de portada"
               />
@@ -51,9 +50,8 @@ const FichaTecnica = () => {
                   </p>
                   <p className="green feature-ficha">{propiedad.Terreno}</p>
                   <p className="green feature-ficha">
-                    {propiedad.Antiguedad + (propiedad.Antiguedad === 1
-                      ? " año"
-                      : " años")}
+                    {propiedad.Antiguedad +
+                      (propiedad.Antiguedad === 1 ? " año" : " años")}
                   </p>
                   <p className="feature-ficha">Recamaras</p>
                   <p className="feature-ficha">Baños</p>
@@ -65,10 +63,13 @@ const FichaTecnica = () => {
                 </div>
               </div>
             </div>
+            <p className="titulo-ficha">{propiedad.Titulo}</p>
             <div className="info-container-ficha">
               <div className="info-ficha-izquierda">
-                <p className="titulo-ficha">{propiedad.Titulo}</p>
-                <p className="precio-ficha">Precio: ${propiedad.Precio}</p>
+                <p className="precio-ficha-wrapper">Precio:</p>
+                <p className="precio-ficha">
+                  ${Number(propiedad.Precio).toLocaleString("en")}
+                </p>
                 <p className="descripcion-ficha">{propiedad.Descripcion}</p>
                 {propiedad.Caracteristicas.map((v, idx) => {
                   return (
@@ -77,6 +78,12 @@ const FichaTecnica = () => {
                     </p>
                   );
                 })}
+              </div>
+              <div className="info-ficha-derecha">
+                <img
+                  src="https://maps.googleapis.com/maps/api/staticmap?center=21.107832,-86.880015&markers=color:blue%7Clabel:%7C21.107832,-86.880015&zoom=16&size=600x300&maptype=roadmap&key="
+                  alt="mapa"
+                />
               </div>
             </div>
             <p className="titulo-ficha">Fotos:</p>

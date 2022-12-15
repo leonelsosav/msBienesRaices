@@ -1,13 +1,70 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
-.title-profile,
-.subtitle-profile {
-  color: var(--blue-hard);
-  margin-left: 20px;
+.propiedad-container {
+  margin-left: 50px;
 }
 
 .propiedad-photos-container {
-  width: 60%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.propiedad-photos-footer {
+  width: 90%;
+  display: block;
+  margin: auto;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  height: 50px;
+  background-color: #f9f4f0;
+}
+
+.title-profile,
+.subtitle-profile {
+  color: #414042;
+  margin-left: 20px;
+}
+
+.title-profile {
+  font-weight: 700;
+  font-size: 45px;
+  letter-spacing: -0.045em;
+}
+
+.status-profile {
+  background-color: var(--blue-hard);
+  color: var(--bgd-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 20px;
+  width: fit-content;
+}
+
+.price-profile {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 20px;
+  color: var(--blue-gray);
+}
+
+.portada-banner-profile {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  width: 60%; 
+  border-radius: 20px;
+}
+
+.features-banner-profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 0;
+  color: var(--blue-hard);
+  font-weight: bold;
+}
+
+.text-profile {
+  color: var(--gray-font);
+  margin-left: 20px;
 }
